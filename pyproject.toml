@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fairderm-eval"
+version = "0.1.0"
+description = "FairDerm-Eval melanoma fairness and explanation audit toolkit"
+requires-python = ">=3.11"
+dependencies = [
+  "torch==2.9.0",
+  "numpy==2.3.4",
+  "scikit-learn==1.7.2",
+  "PyYAML==6.0.3",
+  "omegaconf==2.3.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "source"}
+
+[tool.setuptools.packages.find]
+where = ["source"]
+
+[tool.pytest.ini_options]
+pythonpath = ["source"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "C4", "SIM", "ANN"]
+ignore = ["ANN101", "ANN102"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+mypy_path = "source"
+packages = ["fairderm_eval"]
+warn_unused_ignores = true

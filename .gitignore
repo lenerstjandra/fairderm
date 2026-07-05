@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+artifacts/*
+!artifacts/.keep
+checkpoints/
+outputs/
+*.pt
+*.pth
+.env
+.DS_Store

@@ -1,0 +1,7 @@
+ISIC 2020 | reachable | https://challenge2020.isic-archive.com/ | license not stated in manuscript
+DDI | reachable | https://ddi-dataset.github.io/ | license not stated in manuscript
+Fitzpatrick17k | reachable | https://github.com/mattgroh/fitzpatrick17k | license not stated in manuscript
+MIDAS | reachable canonical alternative | https://stanfordaimi.azurewebsites.net/datasets/midas | paper URL returned 404 during check
+PAD-UFES-20 | reachable | https://data.mendeley.com/datasets/zr7vgbcyr2 | CC BY 4.0 indicated by source response
+MSKCC Skin Tone Labeling | reachable | https://api.isic-archive.com/collections/413/ | license not stated in manuscript
+Private deployment cohort | restricted | aggregate-only release | data-use agreement required

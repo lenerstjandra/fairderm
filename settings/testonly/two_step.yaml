@@ -1,0 +1,17 @@
+seed: 7
+precision: fp32
+world_size: 1
+per_device_batch: 8
+grad_accum: 1
+effective_batch: 8
+epochs: 1
+learning_rate: 0.001
+warmup_steps: 0
+weight_decay: 0.0
+scheduler: constant
+image_size: 32
+steps: 2
+prompt_strategy: P4
+bootstrap_repeats: 25
+ece_bins: 5
+private_records_enabled: false

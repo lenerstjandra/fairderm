@@ -1,0 +1,16 @@
+seed: 2026
+precision: bf16
+world_size: 8
+per_device_batch: 192
+grad_accum: 1
+effective_batch: 1536
+epochs: 200
+learning_rate: 0.00003
+warmup_steps: 20000
+weight_decay: 0.05
+scheduler: cosine
+image_size: 518
+prompt_strategy: P4
+bootstrap_repeats: 10000
+ece_bins: 10
+private_records_enabled: false

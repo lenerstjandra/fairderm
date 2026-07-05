@@ -1,0 +1,33 @@
+Project name: fairderm_eval
+Confidence: high
+Evidence: title and Methods 4.1 name the FairDerm-Eval framework.
+
+Domain: dermatology AI audit for melanoma diagnosis across Fitzpatrick skin-tone groups
+Confidence: high
+Evidence: Abstract, Introduction, Methods 4.3 through 4.15.
+
+Framework: Python 3.11, PyTorch supervised baselines, prompt-based MLLM audit, sentence-transformer and NLI explanation scoring hooks
+Confidence: high
+Evidence: Supplementary Methods 1 states Python 3.11 and the evaluated modules.
+
+Venue: npj Digital Medicine style manuscript
+Confidence: medium
+Evidence: filename prefix and article formatting match npj Digital Medicine manuscript style.
+
+Datasets: ISIC 2020, DDI, Fitzpatrick17k, MIDAS, PAD-UFES-20, MSKCC Skin Tone Labeling, restricted private deployment cohort
+Confidence: high
+Evidence: Methods 4.3, Supplementary Table S2, Data and code availability.
+
+Compute target: compute not reported; release default uses upper-bound 8 accelerator processes, 80 GB per process, bf16, 96 hour envelope
+Confidence: low
+Evidence: paper reports runtime and memory in prose but does not provide concrete GPU model, count, or wall-clock values.
+
+Hyperparameters: supervised baseline defaults are release decisions because the paper does not list optimizer schedule values
+Confidence: low
+Evidence: Methods 4.4 identifies ResNet-50, EfficientNet-B4, ViT-B/16 but omits optimizer and schedule.
+
+Supplementary material: embedded in the main PDF
+Confidence: high
+Evidence: PDF pages 38-42 contain Supplementary Methods and Tables S1-S12.
+
+Extra signals: Theorem 1, six prompting strategies, ten MLLMs, three supervised baselines, ten-bin ECE, bootstrap confidence intervals, private silent-mode deployment, safety robustness checks.

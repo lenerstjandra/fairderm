@@ -1,0 +1,40 @@
+FairDerm-Eval
+
+FairDerm-Eval audits melanoma diagnostic fairness, explanation quality, calibration, cross-modality behavior, and clinician plus model deployment outcomes across public dermatology datasets and a restricted deployment cohort.
+
+Installation
+
+pip install -e .
+conda env create -f environment.yml
+python -m fairderm_eval.cli.audit settings/main/audit.yaml
+
+Docker
+
+docker build -f containers/CUDA121.lock .
+
+Data
+
+Dataset source links are listed in records/dataset_sources.txt. Private deployment records are not public and are represented only by aggregate tables.
+
+Training
+
+The primary supervised baseline configuration uses 8 GPUs, global batch 1536, 200 epochs, learning rate 0.00003, bf16 mixed precision, and 518x518 images. This mirrors the reported audit scale where training details were incomplete and uses an upper-bound compute profile for local baseline runs.
+
+Evaluation
+
+python -m fairderm_eval.cli.audit settings/main/audit.yaml
+python -m fairderm_eval.cli.tables records/tables/ddi_reference.json
+python -m fairderm_eval.cli.train settings/testonly/two_step.yaml
+
+Expected headline values
+
+DDI GPT-5: FNR disparity 18.2 percentage points, AUC gap 5.6 percentage points, worst-group ratio 0.79.
+Human plus AI deployment: FNR disparity 7.4 percentage points and worst-group ratio 0.92.
+
+Compute budget
+
+Primary audit settings reserve 8 accelerator processes, 80 GB memory per process, bf16 precision, and a 96 hour wall-clock envelope for full public dataset evaluation with prompt collection, explanation scoring, and supervised baselines.
+
+Checkpoints
+
+Model checkpoints are available upon reasonable request. Hashes for public release artifacts should be recorded in artifacts when frozen.

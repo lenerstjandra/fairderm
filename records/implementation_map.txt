@@ -1,0 +1,13 @@
+Abstract and Fig 1 | records/tables/reference.py | public datasets, model families, three-module audit outputs
+Methods 4.1 | orchestration/audit.py | integrated evaluation pipeline
+Methods 4.2 and Theorem 1 | stats/fairness_bound.py | faithfulness fairness bound
+Methods 4.3 | ledger/datasets.py | dataset registry and access policy
+Methods 4.4 | baselines/nets.py | ResNet-50, EfficientNet-B4 style, ViT-B/16 style hooks
+Methods 4.5 and Supplementary Methods 2 | criteria/prompts.py | P1 to P6 templates
+Methods 4.6 | signals/fairness.py | FNR disparity, AUC gap, equalized odds, demographic parity, worst group ratio
+Methods 4.7 | criteria/explanations.py | ABCDE alignment, hallucination, faithfulness
+Methods 4.8 | calib/ece.py | ten-bin ECE and calibration disparity
+Methods 4.9 | signals/skin_tone.py | ITA mapping and grouped FST strata
+Methods 4.10 | stats/intervals.py | bootstrap, Wald intervals, correlation, McNemar, Wilcoxon
+Methods 4.11-4.14 | trial/deployment.py | silent-mode, reader-study, safety, workflow, criteria
+Tables 1-6 and S1-S12 | records/tables/reference.py | aggregate fixtures and checks

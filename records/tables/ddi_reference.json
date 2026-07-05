@@ -1,0 +1,121 @@
+{
+  "rows": [
+    {
+      "model": "GPT-4o",
+      "family": "commercial",
+      "acc_light": 72.1,
+      "acc_dark": 48.3,
+      "fnr_gap": 35.3,
+      "auc_gap": 8.7,
+      "wgr": 0.67
+    },
+    {
+      "model": "GPT-4.1",
+      "family": "commercial",
+      "acc_light": 74.5,
+      "acc_dark": 52.7,
+      "fnr_gap": 28.1,
+      "auc_gap": 7.4,
+      "wgr": 0.71
+    },
+    {
+      "model": "Claude 3.7 Sonnet",
+      "family": "commercial",
+      "acc_light": 70.8,
+      "acc_dark": 51.4,
+      "fnr_gap": 26.5,
+      "auc_gap": 9.2,
+      "wgr": 0.73
+    },
+    {
+      "model": "Gemini 2.0 Pro",
+      "family": "commercial",
+      "acc_light": 66.3,
+      "acc_dark": 41.5,
+      "fnr_gap": 39.7,
+      "auc_gap": 11.3,
+      "wgr": 0.63
+    },
+    {
+      "model": "GPT-5",
+      "family": "commercial",
+      "acc_light": 79.4,
+      "acc_dark": 63.1,
+      "fnr_gap": 18.2,
+      "auc_gap": 5.6,
+      "wgr": 0.79
+    },
+    {
+      "model": "Claude Opus 4.1",
+      "family": "commercial",
+      "acc_light": 78.1,
+      "acc_dark": 62.4,
+      "fnr_gap": 19.5,
+      "auc_gap": 5.9,
+      "wgr": 0.8
+    },
+    {
+      "model": "Gemini 2.5 Pro",
+      "family": "commercial",
+      "acc_light": 76.8,
+      "acc_dark": 59.7,
+      "fnr_gap": 20.5,
+      "auc_gap": 6.8,
+      "wgr": 0.78
+    },
+    {
+      "model": "LLaVA-Med",
+      "family": "open",
+      "acc_light": 58.2,
+      "acc_dark": 31.4,
+      "fnr_gap": 39.7,
+      "auc_gap": 16.8,
+      "wgr": 0.54
+    },
+    {
+      "model": "SkinGPT-4",
+      "family": "domain",
+      "acc_light": 76.3,
+      "acc_dark": 44.6,
+      "fnr_gap": 44.4,
+      "auc_gap": 12.4,
+      "wgr": 0.58
+    },
+    {
+      "model": "Qwen2.5-VL-72B",
+      "family": "open",
+      "acc_light": 63.7,
+      "acc_dark": 42.1,
+      "fnr_gap": 29.8,
+      "auc_gap": 13.5,
+      "wgr": 0.66
+    },
+    {
+      "model": "ResNet-50",
+      "family": "cnn",
+      "acc_light": 64.8,
+      "acc_dark": 52.3,
+      "fnr_gap": 15.4,
+      "auc_gap": 9.4,
+      "wgr": 0.81
+    },
+    {
+      "model": "EfficientNet-B4",
+      "family": "cnn",
+      "acc_light": 68.2,
+      "acc_dark": 57.1,
+      "fnr_gap": 13.3,
+      "auc_gap": 7.8,
+      "wgr": 0.84
+    },
+    {
+      "model": "ViT-B/16",
+      "family": "transformer",
+      "acc_light": 69.5,
+      "acc_dark": 55.3,
+      "fnr_gap": 17.2,
+      "auc_gap": 8.5,
+      "wgr": 0.8
+    }
+  ]
+}
